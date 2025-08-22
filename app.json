@@ -20,18 +20,15 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.steveomatic.slumbertone",
-      "buildNumber": "7",
+      "buildNumber": "8",
       "infoPlist": {
         "UIBackgroundModes": ["audio"]
-      },
-      "entitlements": {
-        "com.apple.developer.audio.background-processing": true
       }
     },
 
     "android": {
       "package": "com.steveomatic.slumbertone",
-      "versionCode": 7,
+      "versionCode": 8,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0a0a0a"
