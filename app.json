@@ -6,26 +6,27 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
-
     "scheme": "slumbertone",
-
     "splash": {
       "image": "./assets/images/background-image.png",
       "resizeMode": "contain",
       "backgroundColor": "#0a0a0a"
     },
-
-    "assetBundlePatterns": ["**/*"],
-
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.steveomatic.slumbertone",
       "buildNumber": "8",
       "infoPlist": {
-        "UIBackgroundModes": ["audio"]
+        "UIBackgroundModes": [
+          "audio",
+          "audio"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
-
     "android": {
       "package": "com.steveomatic.slumbertone",
       "versionCode": 8,
@@ -33,23 +34,32 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#0a0a0a"
       },
-      "permissions": ["WRITE_EXTERNAL_STORAGE", "WAKE_LOCK", "FOREGROUND_SERVICE"]
+      "permissions": [
+        "WRITE_EXTERNAL_STORAGE",
+        "WAKE_LOCK",
+        "FOREGROUND_SERVICE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
-
     "web": {
       "favicon": "./assets/images/icon.png",
       "bundler": "metro"
     },
-
     "sdkVersion": "53.0.0",
-
     "plugins": [
-      ["expo-build-properties", { "ios": { "useFrameworks": "static" } }],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
       "expo-asset",
       "expo-audio",
       "./plugins/with-perfect-loop"
     ],
-
     "extra": {
       "eas": {
         "projectId": "b4d36a30-5ea1-4b03-8a49-16b1c342a20b"

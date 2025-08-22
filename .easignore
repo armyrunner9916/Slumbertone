@@ -4,44 +4,21 @@
 ios/
 android/
 
-# Ignore other unnecessary files
+# Ignore version control
 .git/
-.expo/
+
+# Ignore node_modules - EAS installs these fresh
 node_modules/
-.DS_Store
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Keep screenshots out of build
 new-screenshots/
 
-# Xcode
-*.xcworkspace
-*.xcuserdata
-*.xcsettings
-build/
-DerivedData/
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
+# OS files
+.DS_Store
+*.log
 
-# Android
-*.apk
-*.aab
-*.gradle
-.gradle/
-local.properties
+# Expo
+.expo/
 
-# Testing
-coverage/
-*.test.js
-__tests__/
-.jest/
-
-# Misc
-*.orig
-.env.local
-.env.*.local
+# IMPORTANT: Do NOT exclude audio files!
+# We need all .caf and .m4a files for the app
