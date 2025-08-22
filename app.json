@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Slumbertone",
+    "slug": "slumbertone",
+    "version": "1.3.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+
+    "scheme": "slumbertone",
+
+    "splash": {
+      "image": "./assets/images/background-image.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0a"
+    },
+
+    "assetBundlePatterns": ["**/*"],
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.steveomatic.slumbertone",
+      "buildNumber": "7",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      },
+      "entitlements": {
+        "com.apple.developer.audio.background-processing": true
+      }
+    },
+
+    "android": {
+      "package": "com.steveomatic.slumbertone",
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0a0a0a"
+      },
+      "permissions": ["WRITE_EXTERNAL_STORAGE", "WAKE_LOCK", "FOREGROUND_SERVICE"]
+    },
+
+    "web": {
+      "favicon": "./assets/images/icon.png",
+      "bundler": "metro"
+    },
+
+    "sdkVersion": "53.0.0",
+
+    "plugins": [
+      ["expo-build-properties", { "ios": { "useFrameworks": "static" } }],
+      "expo-asset",
+      "expo-audio",
+      "./plugins/with-perfect-loop"
+    ],
+
+    "extra": {
+      "eas": {
+        "projectId": "b4d36a30-5ea1-4b03-8a49-16b1c342a20b"
+      }
+    }
+  }
+}

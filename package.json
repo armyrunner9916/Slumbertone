@@ -1,0 +1,43 @@
+{
+  "name": "slumbertone",
+  "version": "1.1.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^10.1.2",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-community/datetimepicker": "8.4.1",
+    "@react-native-community/slider": "4.5.6",
+    "expo": "53.0.20",
+    "expo-asset": "~11.1.7",
+    "expo-audio": "~0.4.8",
+    "expo-blur": "~14.1.5",
+    "expo-build-properties": "^0.14.8",
+    "expo-dev-client": "~5.2.4",
+    "expo-haptics": "~14.1.4",
+    "expo-linear-gradient": "~14.1.5",
+    "expo-status-bar": "~2.2.3",
+    "ngrok": "4.1.0",
+    "react": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-track-player": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2"
+  },
+  "private": true,
+  "overrides": {
+    "glob": "^10.4.5",
+    "rimraf": "^5.0.5",
+    "inflight": "npm:@isaacs/inflight@^1.0.1",
+    "@babel/plugin-proposal-class-properties": "npm:@babel/plugin-transform-class-properties@^7.25.2",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "npm:@babel/plugin-transform-nullish-coalescing-operator@^7.24.7",
+    "@babel/plugin-proposal-optional-chaining": "npm:@babel/plugin-transform-optional-chaining@^7.24.8"
+  }
+}
