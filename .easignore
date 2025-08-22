@@ -1,0 +1,47 @@
+# .easignore
+
+# Ignore native directories - EAS will generate these
+ios/
+android/
+
+# Ignore other unnecessary files
+.git/
+.expo/
+node_modules/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Keep screenshots out of build
+new-screenshots/
+
+# Xcode
+*.xcworkspace
+*.xcuserdata
+*.xcsettings
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Android
+*.apk
+*.aab
+*.gradle
+.gradle/
+local.properties
+
+# Testing
+coverage/
+*.test.js
+__tests__/
+.jest/
+
+# Misc
+*.orig
+.env.local
+.env.*.local
